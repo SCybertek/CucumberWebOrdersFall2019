@@ -8,14 +8,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-        glue = "com/vytrack/step_definitions",
-        features = "src/test/resources",
+        glue = "com/weborders/step_definitions", //you can omit having these..if steps are in the same root with features
+        features = "src/test/resources/features", //thi is a must !!
         dryRun = false,
         strict = false,
-        tags = "@scenario_outline_2",
-        plugin = {"html:target/default-report",
-                "json:target/cucumber1.json"
-        }
+        tags = "",
+        plugin = "html:target/default-report"
 
 )
 public class CucumberRunner {
