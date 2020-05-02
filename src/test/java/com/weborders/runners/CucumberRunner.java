@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features", //thi is a must !!
         dryRun = false,
         strict = false,
-        tags = "",
+        tags = "@add_order",
         plugin = "html:target/default-report"
 
 )

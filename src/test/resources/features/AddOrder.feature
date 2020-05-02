@@ -1,5 +1,7 @@
+@add_order
 Feature: Add order
   As use, I want to be able to create new orders
+
   Scenario: 1. Create order
     Given user is on the login page
     And user logs in
@@ -18,5 +20,5 @@ Feature: Add order
     And user click on process button
     And user navigates to "View all orders" page
     Then user verifies that order is displayed
-      | Name      | Product     |
-      | Test User | ScreenSaver |
+      | Name      | Product     | #  | Street  | City     | State    | Zip   | Card | Card Number | Exp   |
+      | Test User | ScreenSaver | 12 | 5th Ave | New York | New York | 10011 | Visa | 12345667890 | 04/25  |
